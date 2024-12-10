@@ -3,51 +3,126 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Body */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
-header {
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-container img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto; 
+}
+
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+
+/* Header Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
     background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
     color: white;
-    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #00bfa6;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+h1, h2 {
+    margin-bottom: 10px;
 }
 
-header nav ul li {
-    margin: 0 1rem;
+p {
+    margin: 10px 0;
 }
 
-header nav ul li a {
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bfa6;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-card .btn:hover {
+    background-color: #008f7a;
 }
 
 /* Footer */
 footer {
+    text-align: center;
+    padding: 10px;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-/* Main Content */
-main {
-    padding: 2rem;
-}
-
-main img {
-    max-width: 100%;
+    font-size: 0.9rem;
 }
