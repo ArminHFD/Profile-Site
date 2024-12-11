@@ -15,11 +15,29 @@ body {
     padding: 0;
 }
 
-.profile-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.profile-container p {
+    margin: 15px 0;
+    line-height: 1.8;
 }
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.skills-list li::before {
+    content: "✔"; 
+    color: #00bfa6;
+    margin-right: 10px;
+}
+
+
 
 .profile-container img {
     width: 150px; 
